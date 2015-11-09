@@ -1,0 +1,57 @@
+Valencia
+--------
+
+* Introduction
+
+Valencia is a gedit plugin that turns gedit into a lightweight IDE for Vala.
+Using Valencia, you can easily browse between symbols in a Vala program.  You
+can build a Vala program inside gedit and can easily jump to lines with
+build errors. You can also get tooltips for methods and get autocompletion 
+suggestions by invoking autocomplete in the appropriate context.
+
+* Installation & Licensing
+
+Please consult the INSTALL and COPYING files for more information.
+    
+* Quick Start
+
+Build Valencia and enable it in gedit as described in the INSTALL file.  If all
+Vala source files in your project are contained in a single directory and that
+directory has a Makefile, Valencia will work with no extra configuration.  If
+your project has multiple directory levels, you'll need to ensure that the
+top directory contains either a file named configure.ac, a file named 
+configure.in or a Makefile containing the line BUILD_ROOT = 1; this is how 
+Valencia identifies the project root.
+
+To use Valencia, place the cursor on any symbol in a Vala file and press F12
+to jump to its definition.  Press Alt+Left to return to where the cursor was
+before you pressed F12.  To build your project, choose Project->Build or type
+Shift+Ctrl+B.  To jump to a line with a build error, simply double-click
+the error in the build output.
+
+To get a tooltip for a method, press Ctrl+Space anywhere inside of a method 
+call. To invoke autocomplete on a symbol, press Ctrl+Space on any word. If you 
+are inside a method call, and want to get autocomplete, press Ctrl+Space twice, 
+once to get a tooltip, then again to get the autocomplete list.
+
+The symbol browser lists symbols only in your project. It looks within local
+namespaces to find all top-level symbols. To search for a symbol, choose 
+Search->Find Symbol... or press Ctrl+Alt+S to go to the search entry, where
+you can type the name of the symbol to which you want to find.
+
+For more information, see the Valencia documentation at
+http://trac.yorba.org/wiki/Valencia.
+
+* Contacting Yorba
+    
+Yorba:                      http://www.yorba.org
+Valencia project page:      http://www.yorba.org/valencia
+Valencia documentation:     http://trac.yorba.org/wiki/Valencia
+    
+We also encourage you to join the Valencia mailing list.  Send an email
+with a subject: line of "subscribe" (no quotes) to
+valencia-request@lists.yorba.org.
+    
+    
+Copyright 2009-2010 Yorba Foundation
+

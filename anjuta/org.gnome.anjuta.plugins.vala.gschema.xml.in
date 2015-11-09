@@ -1,0 +1,19 @@
+<schemalist>
+	<schema id="org.gnome.anjuta.plugins.vala" path="/org/gnome/anjuta/plugins/vala/">
+		<key name="user-packages" type="s">
+			<default>""</default>
+		</key>
+		<key name="completion-enable" type="b">
+			<default>true</default>
+		</key>
+		<key name="completion-space-after-func" type="b">
+			<default>true</default>
+		</key>
+		<key name="completion-brace-after-func" type="b">
+			<default>true</default>
+		</key>
+		<key name="calltip-enable" type="b">
+			<default>true</default>
+		</key>
+	</schema>
+</schemalist>
