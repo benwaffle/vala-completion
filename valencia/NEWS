@@ -1,0 +1,68 @@
+Valencia 0.8.0 - 21 August 2014
+-------------------------------
+
+ * Allow for blacklisted VAPIs to be configured (to prevent loading their symbols)
+ * Manully wipe Valencia's symbols from memory (to cause reloading changed files)
+
+Valencia 0.6.0 - 17 March 2014
+------------------------------
+
+ * Stable release of 0.5 series.
+
+Valencia 0.5.1 - 18 February 2014
+---------------------------------
+
+ * Respect VALAC and LIBVALA environment variables for targeting specific
+   versions of Vala
+
+Valencia 0.5.0 - 11 February 2014
+---------------------------------
+
+ * Now requires gedit 3.8 or better to run
+ * Updated to compile and run with latest versions of Vala
+
+Valencia 0.4.0 - April 5, 2013
+------------------------------
+
+ * Improved parsing
+ * Many, many bugs fixed
+ * Updated to run on GTK+3 / gedit-3
+ * Updated to compile with latest version of Vala (0.17.1 to 0.18.1 required)
+
+Valencia 0.3.0 - May 27, 2010
+-----------------------------
+
+Third release. New features include:
+ * Symbol browser
+ * Customizable build options
+ * Clean project command
+ * Many parser bugfixes and enhancements
+ * Misc. other bugfixes and enhancements
+ * Support for vala 0.8.*
+
+ Valencia 0.2.1 - August 10, 2009
+--------------------------------
+
+Minor bugfix release:
+ * Display correct version number.
+
+Valencia 0.2.0 - August 7, 2009
+-------------------------------
+
+Second release. New features include:
+ * Tooltips displaying method prototypes
+ * Autocomplete for members of method, class, namespace, and global scope
+ * Parses system vapi files
+ * Progress bar while parsing symbols
+ * Many parser bugfixes and enhancements
+
+Valencia 0.1.0 - June 29, 2009
+------------------------------
+
+Initial release.  Features include:
+
+ * Jumping to symbol definitions
+ * Building a Vala program in gedit
+ * Jumping to build errors
+ * Running a Vala program in gedit
+

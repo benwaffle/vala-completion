@@ -1,0 +1,14 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+bindir=@bindir@
+includedir=@includedir@
+datarootdir=@datarootdir@
+datadir=@datadir@
+
+Name: Vala
+Description: The Vala Toys completion library
+Version: @VERSION@
+Requires: glib-2.0 gobject-2.0 libvala-@VALA_VERSION@
+Libs: -L${libdir} -lafrodite@PACKAGE_SUFFIX@
+Cflags: -I${includedir}/afrodite@PACKAGE_SUFFIX@

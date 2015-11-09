@@ -1,0 +1,25 @@
+
+Valencia Installation
+---------------------
+
+To build and install Valencia, type the following commands:
+
+    $ make
+    $ make install
+
+Do *not* make install as root; Valencia installs in your ~/.gnome2/gedit 
+directory, and if you install as root the file permissions will be wrong.
+
+Valencia defaults to a specific version of Vala when building (depending on
+the last time Valencia was updated).  If you wish to build Valencia against
+a specific verison of Vala, use the VALAC and LIBVALA environment variables.
+For example:
+
+    $ VALAC=valac-0.20 LIBVALA=libvala-0.20 make
+
+To enable Valencia in gedit, select Edit->Preferences and the click on the 
+Plugins tab. Find Valencia in the plugin list and check its checkbox, then
+click Close.
+
+Copyright 2009-2015 Yorba Foundation
+

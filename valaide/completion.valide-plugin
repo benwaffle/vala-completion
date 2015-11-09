@@ -1,0 +1,9 @@
+[Valide Plugin]
+Module=completion
+Vapi=0
+Name=Completion
+Description=Auto-completion
+Authors=Nicolas Joseph
+Icon=default
+Copyright=Copyright © 2008-2010 Nicolas Joseph
+Website=http://www.valaide.org/
