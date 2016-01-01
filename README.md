@@ -26,14 +26,6 @@ Part of Vala Toys for gEdit (Vtg).
 [Source code](https://github.com/robxu9/vala-toys/tree/master/afrodite)
 
 
-Vsc (Vala symbol completion)
----
-
-Outdated, never released. Completely replaced by Afrodite.
-
-[Source code](https://github.com/robxu9/vala-toys/tree/vtg_0_6_x/vsc)
-
-
 Guanako
 ---
 
@@ -45,18 +37,6 @@ Under development.
 Part of Valama IDE.
 
 [Source code](https://github.com/Valama/valama/tree/master/guanako)
-
-
-Valide autocompletion providers
----
-
-Part of Val(a)IDE.
-
-Uses Afrodite and Valencia for completion.
-
-- supports vala 0.12
-
-[Source code](https://bazaar.launchpad.net/~valide/valide/dev/files/head:/plugins/completion/)
 
 
 Anjuta autocompletion provider
