@@ -39,7 +39,7 @@ namespace Afrodite
 
 		private bool _begin_parse_event_fired = false;
 		
-		private Thread<int> _parser_thread;
+		private unowned Thread<int> _parser_thread;
 		private int _parser_stamp = 0;
 		private int _parser_remaining_files = 0;
 		private int _current_parsing_total_file_count = 0;
@@ -58,7 +58,7 @@ namespace Afrodite
 			this.id = id;
 			_vapidirs = new ArrayList<string> (GLib.str_equal);
 			_source_queue = new ArrayList<SourceItem> ();
-			_source_queue_mutex = Mutex ();
+			_source_queue_mutex = new Mutex ();
 			
 			_codedom = new CodeDom ();
 		}
@@ -240,8 +240,8 @@ namespace Afrodite
 				if (_parser_thread != null) {
 					_parser_thread.join ();
 				}
-				_parser_thread = new Thread<int>.try ("Thread: Parse sources", this.parse_sources);
-			} catch (GLib.Error err) {
+				_parser_thread = Thread.create_full<int> (this.parse_sources, 0, true, false, ThreadPriority.LOW);
+			} catch (ThreadError err) {
 				error ("%s: can't create parser thread: %s", id, err.message);
 			}
 		}

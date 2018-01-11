@@ -831,7 +831,7 @@ namespace Afrodite
 			
 			if (return_type != null) {
 				if (member_type == MemberType.CREATION_METHOD) {
-					type_name_descr = "Class";
+					type_name_descr = _("Class");
 				} else {
 					return_type_descr = return_type.description;
 				}
